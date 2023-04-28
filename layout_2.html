@@ -9,49 +9,61 @@
 <style>
     *{outline: white 8px solid}
 
+
+        /* xs devices */
+body { background-color: red }x
     .blue{
         background-color: #3FB4FF;
-        height: 50px;
+        height: 80px;
     }
 
 .greenb{
     background-color: green;
-    height: 700px;
+    height: 80px;
 }
 
 .orange{
-    background-color: orange;
-    height: 200px;
-}
+    background-color: orange;}
+    
 
 .gray{
     background-color: gray;
-    height: 700px;
+    height: 180px;
 }
 
 .maroon{
     background-color: #AF3552;
-height: 700px;
+height: 240px;
 }
 .pink{
     background-color: pink;
-    height: 700px
+    height: 180px
 }
 
-    /* xs devices */
-body { background-color: red }
+
+
 /* sm devices */
 @media (min-width: 576px) {
 body { background-color: orange }
 }
+
 /* md devices */
 @media (min-width: 768px) {
 body { background-color: yellow }
+.greenb {height: 240px;}
+.maroon{height: auto;}
 }
+
 /* lg devices */
 @media (min-width: 992px) {
 body { background-color: green }
+.blue{
+    height: 60px;
 }
+.greenb{ height: auto;}
+
+}
+
 /* xl devices */
 @media (min-width: 1200px) {
 body { background-color: blue }
@@ -72,18 +84,36 @@ body { background-color: blue }
     <body>
         <div class="container">
         <div class="row">
-            <div class="col-lg-12 blue"></div>
+            <div class="col-12 blue"></div>
             
 
 </div>
 
 <div class="row">
-        <div class="col-lg-3 greenb"></div>
-        <div class="col-lg-2 gray"></div>
-        <div class="col-lg-4 pink"></div>
-        <div class="col-lg-3 maroon"></div>
+        <div class="col-12 col-lg-3 greenb"></div>
+
+<div class="col-12 col-md-6 col-lg-6 orange">
+<div class="row">
+
+    <div class="grey col-6 col-lg-4"></div> <div class="d-none d-lg-block col-lg-8 pink"></div>
+    <div class="grey col-6 col-lg-4"></div> <div class="d-none d-lg-block col-lg-8 pink"></div>
+    <div class="grey col-6 col-lg-4"></div> <div class="d-none d-lg-block col-lg-8 pink"></div>
+    <div class="grey col-6 col-lg-4"></div> <div class="d-none d-lg-block col-lg-8 pink"></div>
+    <div class="grey col-6 col-lg-4"></div> <div class="d-none d-lg-block col-lg-8 pink"></div>
+    <div class="grey col-6 col-lg-4"></div> <div class="d-none d-lg-block col-lg-8 pink"></div>
+
+
+</div>
+</div>
+
+
+
+
+        <div class="col-12 col-md-6 col-lg-3 maroon"></div>
 
         </div> 
+        </div>
+        
         
 
        
